@@ -60,3 +60,12 @@ if __name__ == "__main__":
     for block in liste_element:
         for name in list_a_recup:
             print(fetch_value(name, block))
+            
+            
+            
+Traceback (most recent call last):
+  File "D:\Applis\automatisation\mail\bpc\send_mail_pj_bpc_ref_app.py", line 61, in <module>
+    server.sendmail(sender_mail, toaddrs, msg.as_string())
+  File "D:\Program Files\Python38\lib\smtplib.py", line 868, in sendmail
+    msg = _fix_eols(msg).encode('ascii')
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 572-573: ordinal not in range(128)            
