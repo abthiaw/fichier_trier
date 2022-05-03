@@ -33,6 +33,14 @@ def fetch_value(field_name: str, block: str):
     """
     Cette fonction recupere la valeur des données basé sur le nom en entré(field_name)
     dans un bloc de données (block)
+    
+    
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+
+img = mpimg.imread('sample.jpeg')
+imgplot = plt.imshow(img)
+plt.show()
     @params :
         field_name : le nom du champ a récuperer
         block : le bloc des données
