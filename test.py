@@ -77,3 +77,12 @@ Traceback (most recent call last):
   File "D:\Program Files\Python38\lib\smtplib.py", line 868, in sendmail
     msg = _fix_eols(msg).encode('ascii')
 UnicodeEncodeError: 'ascii' codec can't encode characters in position 572-573: ordinal not in range(128)            
+
+    
+    
+cmde: cd /tools/list/sinagios/plugins/libexec
+./check_disk -w 50% -p /
+cd /
+du -sch * | egrep "M|G"
+exit 0
+} 2> /dev/null    
