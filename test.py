@@ -85,4 +85,15 @@ cmde: cd /tools/list/sinagios/plugins/libexec
 cd /
 du -sch * | egrep "M|G"
 exit 0
-} 2> /dev/null    
+} 2> /dev/null
+
+
+
+
+
+Traceback (most recent call last):
+  File "D:\Applis\automatisation\mail\bpc\bootcamp_env_mail_v1.py", line 62, in <module>
+    msg.add_attachment(img_data, maintype='image', subtype=imghdr.what(None, img_data))
+AttributeError: 'MIMEMultipart' object has no attribute 'add_attachment'
+PS D:\Applis\automatisation\mail\bpc>
+
